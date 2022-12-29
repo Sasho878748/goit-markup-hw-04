@@ -378,7 +378,7 @@ font-style: normal; */
   display: flex;
 
   justify-content: center;
-
+  gap: 24px;
   margin-bottom: 72px;
 }
 
@@ -437,6 +437,7 @@ font-style: normal; */
   flex: none;
   order: 1;
   flex-grow: 0;
+  
 }
 
 .item-card {
