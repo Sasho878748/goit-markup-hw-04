@@ -150,9 +150,13 @@ button {
 .main-index {
 }
 .hero {
-  background: var(--main-hero-color);
+  
+  /* background: var(--main-hero-color); */
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
+background-image: url(../images/hero-image.png);
 }
 .hero-title {
   /* font-family: 'Roboto';
@@ -173,6 +177,7 @@ font-style: normal; */
 }
 
 .hero-container {
+  
 }
 .hero-btn {
   font-family: inherit;
