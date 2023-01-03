@@ -233,6 +233,10 @@ font-style: normal; */
   background-color: var(--main-button-color);
   color: var(--main-light-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: var(--main-button-color);
 }
 .values {
   padding-top: 120px;
@@ -329,6 +333,9 @@ font-style: normal; */
 
 .list-item {
   background-color: var(--main-light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   /* font-family: 'Roboto';
@@ -395,6 +402,11 @@ font-style: normal; */
   justify-content: center;
 }
 
+.list-link-svg:hover,
+.list-link-svg:focus {
+  background-color: var(--main-btn-color-2);
+}
+
 .team-svg {
 }
 
@@ -454,6 +466,10 @@ fill: #4d5ae5;
 }
 
 /* footer */
+
+.container-footer {
+  display: flex;
+}
 .page-footer {
   background: var(--main-hero-color);
   padding-top: 100px;
@@ -483,26 +499,23 @@ font-style: normal; */
 }
 
 .soc-box-footer {
-  display: flex;
+  margin-left: 120px;
 }
 
 .soc-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-light-color);
-
- 
+  display: block;
+  margin-bottom: 16px;
 }
 
 .team-list-link-footer {
   display: flex;
   justify-content: center;
   gap: 16px;
-
-  
-
 }
 
 .list-item-svg-footer {
@@ -522,7 +535,7 @@ font-style: normal; */
 
 .list-link-svg-footer:hover,
 .list-link-svg-footer:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 
 .team-svg-icon-footer {
@@ -558,6 +571,7 @@ font-style: normal; */
 .portfolio-btn {
   font-family: inherit;
   background: var(--main-comand-bg-color);
+  border-color: var(--main-comand-bg-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   flex: none;
@@ -604,8 +618,15 @@ font-style: normal; */
 }
 
 .item-card {
-  /* margin-top: 48px;
-  margin-left: 24px; */
+  background-color: --main-light-color;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
+}
+
+.item-card:hover,
+.item-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-text {
